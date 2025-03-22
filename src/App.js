@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 export default function App() {
@@ -40,6 +39,7 @@ export default function App() {
                 <img
                   src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
                   className="weather-app-icon"
+                  alt="weather icon"
                 />
               </div>
               <div className="weather-app-temperature-value" id="temperature">
@@ -52,18 +52,27 @@ export default function App() {
         </main>
         <footer>
           Coded by
-          <a href="https://github.com/xiwilson" target="_blank">
+          <a
+            href="https://github.com/xiwilson"
+            target="_blank"
+            rel="noreferrer"
+          >
             Linzi Wilson,
           </a>
           is open-sourced on
           <a
             href="https://github.com/xiwilson?tab=repositories"
             target="_blank"
+            rel="noreferrer"
           >
             GitHub
           </a>
           and is
-          <a href="https://xiweather-app.netlify.app/" target="_blank">
+          <a
+            href="https://xiweather-app.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             hosted on Netlify
           </a>
         </footer>
