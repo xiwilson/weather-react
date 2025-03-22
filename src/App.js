@@ -13,7 +13,7 @@ export default function App() {
           <a
             href="https://github.com/xiwilson"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Linzi Wilson,{" "}
           </a>
@@ -21,7 +21,7 @@ export default function App() {
           <a
             href="https://github.com/xiwilson?tab=repositories"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             GitHub{" "}
           </a>
@@ -29,7 +29,7 @@ export default function App() {
           <a
             href="https://xiweather-app.netlify.app/"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             hosted on Netlify
           </a>
