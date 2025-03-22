@@ -1,6 +1,7 @@
 import React from "react";
 import Weather from "./Weather";
 import "./App.css";
+import "./Weather.css";
 
 export default function App() {
   return (
@@ -8,23 +9,23 @@ export default function App() {
       <div className="weather-app">
         <Weather />
         <footer>
-          Coded by
+          This app was coded by{" "}
           <a
             href="https://github.com/xiwilson"
             target="_blank"
             rel="noreferrer"
           >
-            Linzi Wilson,
+            Linzi Wilson,{" "}
           </a>
-          is open-sourced on
+          it is open-sourced on{" "}
           <a
             href="https://github.com/xiwilson?tab=repositories"
             target="_blank"
             rel="noreferrer"
           >
-            GitHub
+            GitHub{" "}
           </a>
-          and is
+          and is{" "}
           <a
             href="https://xiweather-app.netlify.app/"
             target="_blank"
