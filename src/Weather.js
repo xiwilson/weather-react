@@ -14,7 +14,7 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       iconUrl:
         "https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_2-256.png",
-      wind: response.data.main.wind.speed,
+      wind: response.data.wind.speed,
       name: response.data.name,
     });
   }
@@ -74,6 +74,6 @@ export default function Weather(props) {
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${props.defaultCity}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
-    return "Loading...":
+    return "Loading...";
   }
 }
