@@ -1,6 +1,7 @@
 .App {
   max-width: 600px;
   margin: 30px auto;
+  height: 0 auto;
 }
 
 body {

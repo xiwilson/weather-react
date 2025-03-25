@@ -3,9 +3,10 @@
   background-color: rgba(255, 255, 255, 0.334);
   padding: 30px;
   margin: 20px auto;
-  border-radius: 20px;
+  border-radius: 15px;
 }
 .btn-search {
+  margin-bottom: 20px;
   color: white;
   border: 1px solid rgba(255, 255, 255, 0.354);
   background-color: rgba(255, 255, 255, 0.249);
@@ -14,7 +15,7 @@
 }
 .Weather h1 {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 600;
   margin: 20px 0 0 0;
   line-height: 29px;
@@ -23,6 +24,7 @@
 .Weather ul {
   margin: 0;
   padding: 0;
+  color: white;
 }
 .Weather li {
   display: block;
