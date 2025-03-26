@@ -14,10 +14,9 @@ export default function Weather(props) {
       ready: true,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
-      date: new Date(response.data.dt * 1000),
       description: response.data.condition.description,
-      iconUrl:
-        "https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_2-256.png",
+      iconUrl: response.data.condition.icon_url,
+      date: new Date(response.data.time * 1000),
       wind: response.data.wind.speed,
       city: response.data.city,
     });
