@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
+import "./WeatherForecast.css";
 import "./App.css";
 
 export default function Weather(props) {
@@ -10,9 +11,9 @@ export default function Weather(props) {
   const [city, setCity] = useState(props.defaultCity);
 
   function handleResponse(response) {
-    console.log(response);
     setWeatherData({
       ready: true,
+      coord: response.data.coord,
       temperature: response.data.temperature.current,
       humidity: response.data.temperature.humidity,
       description: response.data.condition.description,
@@ -58,9 +59,8 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <div>
-          <WeatherForecast />
-        </div>
+
+        <WeatherForecast className="daily-container" data={weatherData} />
       </div>
     );
   } else {
